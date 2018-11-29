@@ -1,0 +1,26 @@
+.task {
+  height: 100px;
+  width: 100px;
+  vertical-align: middle;
+  text-align: center;
+  border: 2px solid #fff;
+}
+
+.task.is-primary {
+  background-color: #34495e;
+  color: #fff;
+}
+
+
+.task.is-success {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.main table {
+	margin: 0 auto;
+}
+.form {
+	margin: 0 auto;
+	width: 300px;
+}

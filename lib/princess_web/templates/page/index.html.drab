@@ -1,0 +1,34 @@
+<section class="hero is-info">
+	<div class="hero-body has-text-centered">
+		<h1 class="title">
+			<%= @welcome_text %>
+			<span id="task-status" class="tag <%= @task_label %>">
+				<%= @task_status %>
+			</span>
+		</h1>
+		<br />
+		<div class="field form">
+			<p class="control">
+				<input class="input is-large has-text-centered" type="text" placeholder="Put a number to divide" drab-keyup="calc_div"
+				 drab-options="debounce(500)">
+			</p>
+		</div>
+	</div>
+</section>
+
+<hr />
+
+<section class="main">
+
+	<table>
+		<%= for row <- @rows do %>
+		<tr>
+			<%= for col <- row do %>
+			<td class="task is-primary" task-id="<%= col %>">
+				<%= col %>
+			</td>
+			<% end %>
+		</tr>
+		<% end %>
+	</table>
+</section>
