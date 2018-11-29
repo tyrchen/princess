@@ -3,7 +3,7 @@ defmodule PrincessWeb.PageController do
 
   def index(conn, _params) do
     rows =
-      1..100
+      1..Application.get_env(:princess, :max_value)
       |> Enum.chunk_every(10)
 
     render(conn, "index.html",

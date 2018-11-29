@@ -1,5 +1,12 @@
 # Princess
 
+This is a toy to play with [drab](https://tg.pl/drab). The code is inspired by my wife - she drew a 10x10 table to show the magic of dividend to my 6-year-old girl.
+
+![Snapshot](./assets/static/images/snapshot.jpg)
+
+## Running
+
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
@@ -7,13 +14,3 @@ To start your Phoenix server:
   * Start Phoenix endpoint with `mix phx.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix

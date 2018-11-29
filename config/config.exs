@@ -15,16 +15,13 @@ config :princess, PrincessWeb.Endpoint,
   pubsub: [name: Princess.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Drab
-config :drab, PrincessWeb.Endpoint,
-  otp_app: :princess
+config :drab, PrincessWeb.Endpoint, otp_app: :princess
 
 # Configures default Drab file extension
-config :phoenix, :template_engines,
-  drab: Drab.Live.Engine
+config :phoenix, :template_engines, drab: Drab.Live.Engine
 
 # Configures Drab for webpack
-config :drab, PrincessWeb.Endpoint,
-  js_socket_constructor: "window.__socket"
+config :drab, PrincessWeb.Endpoint, js_socket_constructor: "window.__socket"
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -34,6 +31,7 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :princess, max_value: 200
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
